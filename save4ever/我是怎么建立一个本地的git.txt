@@ -1,0 +1,13 @@
+1.从https://git-for-windows.github.io下载msysgit
+2.安装完成后，在开始菜单里找到“Git”->“Git Bash”
+3.配置username & email作为global仓库识别
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+4.配置本地版本库
+$ mkdir learngit #在默认/c/Users/mengdan.zhao.NTTDATABJ/的文件夹下创建一个空文件夹叫“learngit”
+$ cd learngit #进入这个文件夹
+$ pwd #显示当前目录
+/Users/michael/learngit
+5.把上面的文件夹变成git可以管理的仓库
+$ git init
+6.之前创建的文件夹下面多了一个.git文件夹，是git用来追踪版本的，不能修改或删除。

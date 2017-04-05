@@ -1,0 +1,16 @@
+1.在用户主目录（打开cmd的时候默认显示的目录)下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+$ ssh-keygen -t rsa -C "youremail@example.com"
+2.一路enter
+3.完成之后可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+4.去github里的setting添加ssh
+5.创建一个github repository
+6.确认working repository和stage里的东西都commit了，之后执行下面的命令。michaelliao是github用户名，learngit是刚创建的github repo的名字
+$ git remote add origin git@github.com:michaelliao/learngit.git
+7.如果忘了检查6.执行命令报错的话。先把files都commit了之后，执行下面的命令。
+git pull --rebase origin master
+git push origin master
+8.之后本地commit了之后用
+$ git push origin master
+放到github上
+
+这个世界好美好啊
