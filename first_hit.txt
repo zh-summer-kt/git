@@ -5,3 +5,4 @@ Git tracks changes.
 Yeah, I got a real distributed version control system. 
 I should see this message in my github.
 Creating a new branch is quick and simple.
+git merge: disable fast forward
